@@ -19,7 +19,14 @@
 </head>
 
 <body>
-	<ul>
+
+	<nav>
+		<ul>
+			<li><a href="/about">About Page</a></li>
+			<li><a href="/contact">Contact Page</a></li>
+		</ul>
+	</nav>
+	
 		<?php foreach ($tasks as $task) : ?>
 			<li>
 				
@@ -36,7 +43,6 @@
 			</li>
 		<?php endforeach; ?>
 
-	</ul>
 </body>
 </html>
 

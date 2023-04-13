@@ -107,18 +107,15 @@
 
 // $tasks[0]->complete();
 
-$query = require 'bootstrap.php';
+$query = require 'core/bootstrap.php';
 
-// require 'Task.php';
+$router = new Router;
 
-$tasks = $query->selectAll('todos', 'Task');
+require 'routes.php';
 
 // echo '<pre>';
-// die(var_dump($tasks));
+$uri = trim($_SERVER['REQUEST_URI'], '/');
 // echo '</pre>';
 
-// pull everything from a different file:
-require 'index.view.php';
-// require 'codewars.php';
-
+require $router->direct($uri);
 
