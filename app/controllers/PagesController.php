@@ -24,4 +24,9 @@ class PagesController
     {
         return view('contact');
     }
+
+    public function projects()
+    {
+        return view('projects');
+    }
 }

@@ -14,7 +14,3 @@
 </form>
 
 <?php require('partials/footer.php') ?>
-
-
-
-
