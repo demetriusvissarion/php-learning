@@ -1,10 +1,9 @@
 <?php
 
 require 'vendor/autoload.php';
-
 require 'core/bootstrap.php';
 
-// die(var_dump($app));
+use App\Core\{Router, Request};
 
 Router::load('routes.php')
 	->direct(Request::uri(), Request::method()); 

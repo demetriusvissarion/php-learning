@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Controllers;
+
 class PagesController
 {
     public function home()
@@ -8,8 +10,6 @@ class PagesController
         // 2. Delegate
         // 3. Return a response   
         
-        
-
         return view('index');
     }
 
